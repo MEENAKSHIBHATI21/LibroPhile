@@ -37,3 +37,13 @@ CREATE TABLE books (
   genre VARCHAR(100),
   rating FLOAT
 );
+
+
+
+```project structure
+/src
+  /model       # Contains data model classes like Book.java
+  /dao         # Contains database operation classes (DAO)
+  /ui          # Contains GUI classes built with Swing
+/sql           # Contains SQL scripts for database setup
+README.md      # Project documentation
