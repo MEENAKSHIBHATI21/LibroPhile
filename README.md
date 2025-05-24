@@ -26,20 +26,20 @@ LibroPhile is a Java-based desktop application that allows users to manage a vir
 
 
 ###DATABASE CREATION
-CREATE DATABASE librophile;
-USE librophile;
+- CREATE DATABASE librophile;
+- USE librophile;
 
-CREATE TABLE books (
-id INT auto_increment PRIMARY KEY ,
-title VARCHAR(255),
-author varchar(255),
-genre varchar(100),
-rating float 
-);
+-CREATE TABLE books (
+-id INT auto_increment PRIMARY KEY ,
+-title VARCHAR(255),
+-author varchar(255),
+-genre varchar(100),
+-rating float 
+-);
 
 
 ###PROJECT STRUCTURE
-/src
+-/src
   /model         # Data classes like Book.java
   /dao           # Database operations and queries
   /ui            # GUI classes using Swing
