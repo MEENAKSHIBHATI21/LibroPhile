@@ -24,7 +24,6 @@ LibroPhile is a Java-based desktop application that allows users to manage a vir
 - IDE of your choice (VS Code, IntelliJ IDEA, Eclipse, or NetBeans)
 
 ### Database Creation
-Run the following commands in your MySQL command line or Workbench to create the database and table:
 
 ```sql
 CREATE DATABASE librophile;
@@ -40,7 +39,8 @@ CREATE TABLE books (
 
 
 
-```project structure
+
+PROJECT STRUCTURE
 /src
   /model       # Contains data model classes like Book.java
   /dao         # Contains database operation classes (DAO)
