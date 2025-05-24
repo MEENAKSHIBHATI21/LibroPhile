@@ -35,7 +35,7 @@ CREATE TABLE books (
   author VARCHAR(255),
   genre VARCHAR(100),
   rating FLOAT
-);
+);```
 
 
 
