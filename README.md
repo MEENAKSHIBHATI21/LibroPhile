@@ -13,7 +13,7 @@ LibroPhile is a Java-based desktop application that allows users to manage a vir
 ## Technology Stack
 - Java (JDK 1.8+)
 - MySQL for database
-- IDE: VS Code
+- IDE: VS Code (or any Java IDE of your choice)
 
 ## Getting Started
 
@@ -21,27 +21,19 @@ LibroPhile is a Java-based desktop application that allows users to manage a vir
 - Java Development Kit (JDK) 1.8 or higher installed
 - MySQL Server installed and running
 - MySQL Connector/J (JDBC driver) included in the project libraries
-- IDE of your choice (IntelliJ IDEA, Eclipse, or NetBeans)
+- IDE of your choice (VS Code, IntelliJ IDEA, Eclipse, or NetBeans)
 
+### Database Creation
+Run the following commands in your MySQL command line or Workbench to create the database and table:
 
+```sql
+CREATE DATABASE librophile;
+USE librophile;
 
-###DATABASE CREATION
-- CREATE DATABASE librophile;
-- USE librophile;
-
--CREATE TABLE books (
--id INT auto_increment PRIMARY KEY ,
--title VARCHAR(255),
--author varchar(255),
--genre varchar(100),
--rating float 
--);
-
-
-###PROJECT STRUCTURE
--/src
-  /model         # Data classes like Book.java
-  /dao           # Database operations and queries
-  /ui            # GUI classes using Swing
-/sql             # SQL scripts for database setup
-README.md        # Project documentation
+CREATE TABLE books (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  author VARCHAR(255),
+  genre VARCHAR(100),
+  rating FLOAT
+);
