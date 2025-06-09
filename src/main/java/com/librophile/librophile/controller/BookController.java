@@ -30,8 +30,19 @@ public class BookController {
         return bookRepo.save(book);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteBook(@PathVariable int id) {
-        bookRepo.deleteById(id);
+    // ✅ THIS is the method you recently added
+    @PostMapping("/add")
+    public String addBookViaForm(@RequestParam String title,
+                                 @RequestParam String author,
+                                 @RequestParam String genre,
+                                 @RequestParam float rating) {
+        Book newBook = new Book();
+        newBook.setTitle(title);
+        newBook.setAuthor(author);
+        newBook.setGenre(genre);
+        newBook.setRating(rating);
+
+        bookRepo.save(newBook);
+        return "redirect:/index.html";
     }
 }
