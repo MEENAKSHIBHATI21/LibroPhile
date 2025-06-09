@@ -39,3 +39,40 @@ librophile/
 │ │ │ └── LibroPhileApplication.java
 │ │ └── resources/
 │ │ └── application.properties
+├── static/
+│ └── index.html
+├── pom.xml
+
+---
+
+Visit: http://localhost:8080/index.html
+
+College: Galgotias College of Engineering & Technology
+
+Course: B.Tech CSE – AI/ML
+
+Year: First Year
+
+Project: Review 2 Final Submission
+
+---
+
+📸 UI Preview
+Light mode Spotify-style layout
+
+Scrollable shelves
+
+Genre filters
+
+Form with alerts and validation
+
+---
+## 🚀 How to Run
+
+1. Start **MySQL** using XAMPP
+2. Make sure you have a database named `librophile` created
+3. Update DB username/password in `application.properties`
+4. Run the app:
+
+```bash
+.\mvnw spring-boot:run
