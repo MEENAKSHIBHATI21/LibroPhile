@@ -1,49 +1,41 @@
-# LibroPhile - Virtual Library Management and Recommendation System
+# 📚 LibroPhile – Virtual Book Recommendation Library
 
-## Project Overview
-LibroPhile is a Java-based desktop application that allows users to manage a virtual library. Users can add, update, search, and delete books stored in a MySQL database. Additionally, the system offers personalized book recommendations based on user preferences. The project demonstrates integration of JDBC for database connectivity and a user-friendly GUI built with Java Swing.
+**LibroPhile** is a full-stack Java web application that lets users explore, recommend, and add books based on genres and ratings. The goal is to make a fun and clean virtual library — inspired by modern platforms like Spotify.
 
-## Features
-- Add, update, delete, and search books in the library database
-- Personalized book recommendation system
-- User-friendly graphical interface with clear layout
-- Robust database connectivity using JDBC and MySQL
-- Modular code design following MVC principles
+---
 
-## Technology Stack
-- Java (JDK 1.8+)
-- MySQL for database
-- IDE: VS Code (or any Java IDE of your choice)
+## 💡 Features
 
-## Getting Started
+- 🔍 Search books by genre
+- 🧠 Intelligent book recommendations
+- ➕ Add new books via form
+- 📄 Dynamic book display using REST API
+- 🎨 Clean, Spotify-style UI (light mode)
+- ✅ Integrated with MySQL database
+- ⚡ Spring Boot backend, HTML/CSS/JS frontend
 
-### Prerequisites
-- Java Development Kit (JDK) 1.8 or higher installed
-- MySQL Server installed and running
-- MySQL Connector/J (JDBC driver) included in the project libraries
-- IDE of your choice (VS Code, IntelliJ IDEA, Eclipse, or NetBeans)
+---
 
-### Database Creation
+## 🛠 Tech Stack
 
-```sql
-CREATE DATABASE librophile;
-USE librophile;
+| Layer     | Tech Used                          |
+|-----------|------------------------------------|
+| Backend   | Java + Spring Boot + Maven         |
+| Frontend  | HTML, CSS, Bootstrap, JS (Fetch)   |
+| Database  | MySQL (via JDBC)                   |
+| Tools     | VS Code, GitHub, XAMPP             |
 
-CREATE TABLE books (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255),
-  author VARCHAR(255),
-  genre VARCHAR(100),
-  rating FLOAT
-);
+---
 
-
-
-
-PROJECT STRUCTURE
-/src
-  /model       # Contains data model classes like Book.java
-  /dao         # Contains database operation classes (DAO)
-  /ui          # Contains GUI classes built with Swing
-/sql           # Contains SQL scripts for database setup
-README.md      # Project documentation
+## 🧱 Folder Structure
+librophile/
+├── src/
+│ ├── main/
+│ │ ├── java/
+│ │ │ └── com.librophile.librophile/
+│ │ │ ├── controller/
+│ │ │ ├── model/
+│ │ │ ├── repository/
+│ │ │ └── LibroPhileApplication.java
+│ │ └── resources/
+│ │ └── application.properties
